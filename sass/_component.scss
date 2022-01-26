@@ -1,0 +1,22 @@
+.serving-icon,
+.measurement-section-icon{
+    height:2rem;
+    width:2rem;
+    margin-right: 2rem;
+    align-self: center;
+    justify-self: center;
+
+    @media (max-width:37.5em){
+       align-self: center;
+       justify-self: center;
+    }
+
+}
+.serving-icon{
+    fill: $color-orange;
+}
+.measurement-section-icon{
+    fill: $color-grey-1;
+
+  
+}

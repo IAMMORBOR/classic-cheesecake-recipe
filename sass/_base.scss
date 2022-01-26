@@ -1,0 +1,55 @@
+/*  COLOUR VARIABLE*/
+
+$color-grey-1: #4F4F4F;
+$color-grey-2:#333333;
+
+$color-orange: #F2994A;
+
+/*  FONT STYLE VARIABLE*/
+$font-1:"Montserrat", sans-serif;
+$font-2:"Playfair Display", sans-serif;
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+  
+  *::before,
+  *::after {
+    box-sizing: inherit; }
+  
+  html {
+    font-size: 62.5%; /* 1rem == 10px  10 /16*/
+    // font-size: 75%;
+
+    @media (max-width:75em){ /* 1rem == 9px : 9 /16 (1200px) */
+      font-size:56.2%;
+    }
+    @media (max-width:56.2em){ /* 1rem == 8px :8 /16  (900px)*/
+      font-size: 50%;
+    }
+    @media (min-width:112.5em){ /* 1rem == 12px : 12 /16 (1800+px) */
+      font-size: 75%;
+    }
+  }
+ 
+body {
+    font-family: $font-1;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #000;
+    min-height: 100vh;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns:repeat(8, 1fr);
+        // grid-template-rows: repeat(8, 1fr);
+    }
+  
